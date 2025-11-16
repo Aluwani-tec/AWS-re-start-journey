@@ -1,95 +1,76 @@
-# **Database Module – AWS re/Start**
+# 🗄️ Database Module – AWS re/Start
 
-This folder contains all assignments, screenshots, SQL work, and detailed notes for the Database module of AWS re/Start. It covers both **Relational Databases (Amazon RDS)** and **NoSQL Databases (Amazon DynamoDB)** as well as hands-on SQL practice completed inside an EC2 instance.
+This folder contains all assignments, screenshots, SQL work, and detailed notes for the Database module of AWS re/Start. It covers Relational Databases (Amazon RDS), NoSQL Databases (Amazon DynamoDB), and hands-on SQL practice completed inside an EC2 instance.
 
----
-
-## 📘 **Module Overview**
-The Database module teaches how AWS provides managed database solutions that improve reliability, scalability, and performance while removing the manual overhead of traditional database administration.
-
-This module includes:
+## 📘 Module Overview
+The Database module teaches how AWS provides fully managed database services that improve reliability, scalability, and performance. This includes:
 - Amazon RDS (Relational Database Service)
 - Multi-AZ deployment
 - Read replicas
 - Automated backups
 - DynamoDB (NoSQL)
 - SQL commands and JOIN operations
+- MySQL practice on an EC2 instance
 
----
+## 🪪 Assignments Covered
 
-## 🪪 **Assignments Covered**
-
-### **1️⃣ Databases in Practice (Amazon RDS)**
+### 1️⃣ Databases in Practice (Amazon RDS)
 **Screenshot:** `database_rds.png`
 
-- Launch an Amazon RDS instance  
-- Explore database engines  
-- Configure Multi-AZ for high availability  
-- Create a read replica for performance  
-- Understand RDS automated backups and failover  
+**Tasks:**
+- Launch an Amazon RDS instance
+- Explore available database engines
+- Configure Multi-AZ for high availability
+- Create a read replica
+- Review automated backups and failover behaviour
 
 ---
 
-### **2️⃣ First NoSQL Database (DynamoDB)**
+### 2️⃣ First NoSQL Database (DynamoDB)
 **Screenshot:** `database_dynamodb.png`
 
-- Create a NoSQL table in DynamoDB  
-- Insert items with flexible schema  
-- Query DynamoDB tables  
-- Understand partition keys and schema-less storage  
+**Tasks:**
+- Create a DynamoDB table
+- Insert items with flexible schema
+- Query DynamoDB tables
+- Understand partition keys and schema-less storage
 
 ---
 
-### **3️⃣ SQL Database Practice (MySQL on EC2)**
-**Screenshots:**  
-- `mysql_create_tables.png`  
+### 3️⃣ SQL Database Practice (MySQL on EC2)
+**Screenshots:**
+- `mysql_create_tables.png`
 - `mysql_select_join.png`
 
-Tasks completed:
-- Created `restart_lab` database  
-- Created `RESTART` table and inserted 10 records  
-- Created `CLOUD_PRACTITIONER` table  
-- Ran SELECT queries  
-- Performed INNER JOIN to combine tables  
+**Tasks Completed:**
+- Created `restart_lab` database
+- Created `RESTART` table and inserted 10 records
+- Created `CLOUD_PRACTITIONER` table
+- Ran SELECT queries
+- Performed INNER JOIN to combine tables
 
 ---
 
-## 📁 **Folder Contents**
+## 🖼️ Assignment Screenshots
+- `database_rds.png`
+- `database_dynamodb.png`
+- `mysql_create_tables.png`
+- `mysql_select_join.png`
 
-```
-Database/
-│
-├── README.md              → Module summary
-├── topic_notes.md         → Detailed notes
-│
-├── database_rds.png       → RDS assignment screenshot
-├── database_dynamodb.png  → DynamoDB assignment screenshot
-├── mysql_create_tables.png
-├── mysql_select_join.png
-```
+## 🛠️ Key Skills Gained
+- Launching and managing RDS instances
+- Working with Multi-AZ and read replicas
+- Designing and querying DynamoDB tables
+- Writing SQL queries (SELECT, INSERT, JOIN)
+- Understanding relational vs NoSQL databases
+- Using EC2 to run and manage MySQL
 
----
+## 📝 Notes
+All detailed notes are stored in `topic_notes.md`.
 
-## 🛠 **Key Skills Gained**
-- Launching and managing RDS instances  
-- Multi-AZ and read replica design  
-- Working with DynamoDB tables  
-- Running SQL queries (SELECT, INSERT, JOIN)  
-- Understanding relational vs NoSQL approaches  
-- Using EC2 to connect to databases  
-
----
-
-## 📌 **Status**
+## 📌 Status
 ✔️ RDS assignment completed  
 ✔️ DynamoDB assignment completed  
 ✔️ SQL practice completed  
 ✔️ Screenshots uploaded  
-✔️ Notes documented  
-
----
-
-## 🔗 **Additional Notes**
-See `topic_notes.md` for full SQL commands, explanations, and database learning notes.
-
----
+✔️ Notes documented
