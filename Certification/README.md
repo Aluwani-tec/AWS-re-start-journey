@@ -3,8 +3,8 @@
 This folder contains all my completed certificates related to the AWS re/Start Program and supporting technical learning.
 
 ## Completed Certifications
-- **AI Practitioner Certificate** – Completed
-- **GenAI for Decision Makers Certificate** – Completed
+- **AI Practitioner Certificate** - Completed
+- **GenAI for Decision Makers Certificate** - Completed
 
 ## In Progress
 - **AWS Cloud Practitioner Certification**
