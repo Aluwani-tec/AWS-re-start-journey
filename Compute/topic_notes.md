@@ -1,4 +1,4 @@
-# Compute Module Detailed Notes (AWS re/Start)
+# Compute Module Detailed Notes 
 
 These notes summarize the four CloudQuest assignments related to the Compute module.
 
