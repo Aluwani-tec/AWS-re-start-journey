@@ -1,4 +1,4 @@
-# Compute Module – AWS re/Start
+# Compute Module 
 
 This folder contains all my work for the **Compute module**, including screenshots, labs, summaries, and troubleshooting notes.
 
