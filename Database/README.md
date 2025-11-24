@@ -1,8 +1,8 @@
-# 🗄️ Database Module – AWS re/Start
+# Database Module – AWS re/Start
 
 This folder contains all assignments, screenshots, SQL work, and detailed notes for the Database module of AWS re/Start. It covers Relational Databases (Amazon RDS), NoSQL Databases (Amazon DynamoDB), and hands-on SQL practice completed inside an EC2 instance.
 
-## 📘 Module Overview
+## Module Overview
 The Database module teaches how AWS provides fully managed database services that improve reliability, scalability, and performance. This includes:
 - Amazon RDS (Relational Database Service)
 - Multi-AZ deployment
@@ -14,7 +14,7 @@ The Database module teaches how AWS provides fully managed database services tha
 
 ## 🪪 Assignments Covered
 
-### 1️⃣ Databases in Practice (Amazon RDS)
+### Databases in Practice (Amazon RDS)
 **Screenshot:** `database_rds.png`
 
 **Tasks:**
@@ -26,7 +26,7 @@ The Database module teaches how AWS provides fully managed database services tha
 
 ---
 
-### 2️⃣ First NoSQL Database (DynamoDB)
+### First NoSQL Database (DynamoDB)
 **Screenshot:** `database_dynamodb.png`
 
 **Tasks:**
@@ -37,7 +37,7 @@ The Database module teaches how AWS provides fully managed database services tha
 
 ---
 
-### 3️⃣ SQL Database Practice (MySQL on EC2)
+### SQL Database Practice (MySQL on EC2)
 **Screenshots:**
 - `mysql_create_tables.png`
 - `mysql_select_join.png`
@@ -51,13 +51,13 @@ The Database module teaches how AWS provides fully managed database services tha
 
 ---
 
-## 🖼️ Assignment Screenshots
+## Assignment Screenshots
 - `database_rds.png`
 - `database_dynamodb.png`
 - `mysql_create_tables.png`
 - `mysql_select_join.png`
 
-## 🛠️ Key Skills Gained
+## Key Skills Gained
 - Launching and managing RDS instances
 - Working with Multi-AZ and read replicas
 - Designing and querying DynamoDB tables
@@ -65,12 +65,12 @@ The Database module teaches how AWS provides fully managed database services tha
 - Understanding relational vs NoSQL databases
 - Using EC2 to run and manage MySQL
 
-## 📝 Notes
+## Notes
 All detailed notes are stored in `topic_notes.md`.
 
-## 📌 Status
-✔️ RDS assignment completed  
-✔️ DynamoDB assignment completed  
-✔️ SQL practice completed  
-✔️ Screenshots uploaded  
-✔️ Notes documented
+## Status
+ RDS assignment completed  
+ DynamoDB assignment completed  
+ SQL practice completed  
+ Screenshots uploaded  
+ Notes documented
