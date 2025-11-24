@@ -4,7 +4,7 @@ This folder contains all my work for the **Compute module**, including screensho
 
 ---
 
-## 📘 Topics Covered
+## Topics Covered
 - Amazon EC2
 - Instance types & families
 - AMIs (Amazon Machine Images)
@@ -16,7 +16,7 @@ This folder contains all my work for the **Compute module**, including screensho
 
 ---
 
-## 🧪 Labs Completed
+## Labs Completed
 
 ### 1. Cloud First Steps
 - Basic cloud concepts
@@ -39,12 +39,12 @@ This folder contains all my work for the **Compute module**, including screensho
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 All PNG files in this folder relate to the Compute module.
 
 ---
 
-## ⭐ Key Learnings
+## Key Learnings
 - How to launch EC2 instances
 - Understanding instance lifecycle
 - Using user-data scripts
@@ -53,7 +53,7 @@ All PNG files in this folder relate to the Compute module.
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 - AWS Management Console
 - CloudQuest
 - EC2 Dashboard
@@ -62,8 +62,8 @@ All PNG files in this folder relate to the Compute module.
 
 ---
 
-## 📍 Status
-✔️ Compute module completed  
-📌 All screenshots uploaded  
-📌 Notes stored in `topic_notes.md`
+## Status
+ Compute module completed  
+ All screenshots uploaded  
+ Notes stored in `topic_notes.md`
 
