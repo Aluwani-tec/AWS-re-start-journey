@@ -1,10 +1,10 @@
-# Compute Module — Detailed Notes (AWS re/Start)
+# Compute Module Detailed Notes (AWS re/Start)
 
 These notes summarize the four CloudQuest assignments related to the Compute module.
 
 ---
 
-## 1️⃣ Cloud Computing Essentials
+## Cloud Computing Essentials
 **Image:** Cloud Computing Essentials
 
 ### What this assignment teaches
@@ -24,7 +24,7 @@ It removes the need for EC2 servers for simple websites.
 
 ---
 
-## 2️⃣ Cloud Economics
+## Cloud Economics
 **Image:** Cloud Economics
 
 ### What this assignment teaches
@@ -44,7 +44,7 @@ Understanding cloud pricing helps optimize cost and avoid over-provisioning.
 
 ---
 
-## 3️⃣ Cloud First Steps
+## Cloud First Steps
 **Image:** Cloud First Steps
 
 ### What this assignment teaches
@@ -63,7 +63,7 @@ This assignment builds foundational EC2 knowledge used across all cloud workload
 
 ---
 
-## 4️⃣ Computing Solutions
+## Computing Solutions
 **Image:** Computing Solutions
 
 ### What this assignment teaches
@@ -83,7 +83,7 @@ Choosing the correct compute resources improves performance and user experience.
 
 ---
 
-## ✔️ Summary of All Assignments
+## Summary of All Assignments
 - **Cloud Computing Essentials** → S3 website hosting basics  
 - **Cloud Economics** → cloud pricing + cost optimization  
 - **Cloud First Steps** → EC2 basics + user-data + AZs  
