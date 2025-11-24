@@ -1,22 +1,21 @@
-# 🚀 AWS re/Start Journey – Project Repository
+# AWS re/Start Journey - Project Repository
 
 This repository contains my complete AWS re/Start learning journey.  
 It includes hands-on labs, screenshots, module notes, troubleshooting steps, and documentation across all AWS foundational topics.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 Each folder includes:
 - Topic notes (`topic_notes.md`)
 - Labs and practical exercises
-- Screenshots of completed work
 - Module explanations and summaries
 - Troubleshootings steps where applicable
 
 ---
 
-## 🧠 Modules Covered
+## Modules Covered
 
 ### **Compute**
 - EC2 basics, instance launch, SSH, AMIs  
@@ -49,7 +48,7 @@ Each folder includes:
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 To document a clear, professional, and practical understanding of AWS foundational concepts.  
 This repo demonstrates:
 - Real AWS lab execution  
@@ -59,6 +58,6 @@ This repo demonstrates:
 
 ---
 
-## 📌 Notes
+## Notes
 This repository will continue to grow as I complete more modules, labs, and certifications during the AWS re/Start program.
 
