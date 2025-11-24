@@ -1,4 +1,4 @@
-# Database Module – AWS re/Start
+# Database Module 
 
 This folder contains all assignments, screenshots, SQL work, and detailed notes for the Database module of AWS re/Start. It covers Relational Databases (Amazon RDS), NoSQL Databases (Amazon DynamoDB), and hands-on SQL practice completed inside an EC2 instance.
 
