@@ -1,6 +1,6 @@
-# 📦 STORAGE MODULE — TOPIC NOTES
+# STORAGE MODULE NOTES
 
-## 1. 🌐 Amazon S3 Overview
+## 1. Amazon S3 Overview
 Amazon Simple Storage Service (S3) is used to store files (called *objects*) inside *buckets*.  
 It provides durability, scalability, and affordable storage.
 
@@ -18,27 +18,27 @@ It provides durability, scalability, and affordable storage.
 
 ---
 
-## 2. 🗂️ S3 Storage Classes
+## 2. S3 Storage Classes
 Different tiers based on how often the data is accessed:
 
-- **S3 Standard** — for everyday use  
-- **S3 Standard-IA** — cheaper, infrequent access  
-- **S3 One Zone-IA** — stored in one AZ, lower cost  
+- **S3 Standard** - for everyday use  
+- **S3 Standard IA** - cheaper, infrequent access  
+- **S3 One Zone IA** - stored in one AZ, lower cost  
 
 ---
 
-## 3. 🌍 S3 Static Website Hosting
+## 3. S3 Static Website Hosting
 S3 can host simple websites using:
 
-- `index.html` — homepage  
-- Bucket Policy — allows public read  
-- Static Website Hosting feature — serves files over the web  
+- `index.html`- homepage  
+- Bucket Policy - allows public read  
+- Static Website Hosting feature - serves files over the web  
 
 Used in our group project.
 
 ---
 
-## 4. 🔐 Security Basics
+## 4. Security Basics
 - Buckets are private by default  
 - Public access only when needed  
 - Bucket Policies control who can read files  
