@@ -1,10 +1,10 @@
-# Database Module — Detailed Notes (AWS re/Start)
+# Database Detailed Notes 
 
 This file summarizes both the RDS (relational database) and DynamoDB (NoSQL) assignments, as well as hands-on SQL practice done in the EC2 environment.
 
 ---
 
-# 1️⃣ Databases in Practice (Amazon RDS)
+# Databases in Practice (Amazon RDS)
 **Image:** Databases in Practice
 
 ### What this assignment teaches
@@ -28,7 +28,7 @@ RDS removes the heavy admin work (backups, failover, patching), allowing enginee
 
 ---
 
-# 2️⃣ First NoSQL Database (DynamoDB)
+# First NoSQL Database (DynamoDB)
 **Image:** First NoSQL Database
 
 ### What this assignment teaches
@@ -52,7 +52,7 @@ NoSQL databases are extremely fast, scalable, and perfect for applications with 
 
 ---
 
-# 3️⃣ Hands-On SQL Practice (MySQL on EC2)
+# Hands-On SQL Practice (MySQL on EC2)
 **Images:** Terminal screenshots
 
 ### What this assignment teaches
@@ -64,13 +64,13 @@ NoSQL databases are extremely fast, scalable, and perfect for applications with 
 
 ### Commands Used
 
-#### ✔️ Create the database
+#### Create the database
 ```sql
 CREATE DATABASE restart_lab;
 USE restart_lab;
 ```
 
-#### ✔️ Create the RESTART table
+#### Create the RESTART table
 ```sql
 CREATE TABLE RESTART (
   StudentID INT PRIMARY KEY,
@@ -80,7 +80,7 @@ CREATE TABLE RESTART (
 );
 ```
 
-#### ✔️ Insert multiple records
+#### Insert multiple records
 ```sql
 INSERT INTO RESTART VALUES
 (1, 'Olivia', 'Limpopo', '2025-06-30 10:00:00'),
@@ -95,14 +95,14 @@ INSERT INTO RESTART VALUES
 (10, 'Kabelo', 'Mokopane', '2025-08-05 16:00:00');
 ```
 
-#### ✔️ Query the table
+#### Query the table
 ```sql
 SELECT * FROM RESTART;
 ```
 
 ---
 
-# 4️⃣ Creating a second table: CLOUD_PRACTITIONER
+# Creating a second table: CLOUD_PRACTITIONER
 ```sql
 CREATE TABLE CLOUD_PRACTITIONER (
   StudentID INT,
@@ -127,7 +127,7 @@ SELECT * FROM CLOUD_PRACTITIONER;
 
 ---
 
-# 5️⃣ Using INNER JOIN
+# Using INNER JOIN
 Combine the data from both tables:
 
 ```sql
@@ -149,7 +149,7 @@ INNER JOIN CLOUD_PRACTITIONER
 
 ---
 
-# ✔️ Summary of Database Module
+# Summary of Database Module
 - **RDS Assignment:** Multi-AZ, read replicas, backups  
 - **DynamoDB Assignment:** NoSQL, flexible schema, fast scaling  
 - **SQL Practice:** Creating tables, inserting data, JOIN operations  
