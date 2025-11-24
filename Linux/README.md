@@ -1,8 +1,8 @@
-# 🐧 Linux Module – AWS re/Start
+# Linux Module 
 
 This folder contains all Linux command-line practice completed during the AWS re/Start program. It includes file navigation, text processing, scripting, backups, automation, and hands-on EC2-based Linux exercises.
 
-## 📘 Module Overview
+## Module Overview
 The Linux module teaches core command-line skills required for cloud and system administration.  
 Topics covered:
 - Navigating the Linux filesystem  
@@ -60,7 +60,7 @@ This task demonstrated automation and the fundamentals of shell scripting.
 
 This highlighted how Linux scripts simplify repetitive tasks in system administration.
 
-## 🛠️ Key Skills Gained
+## Key Skills Gained
 - Confident filesystem navigation  
 - Linux file inspection & manipulation  
 - CSV/text processing commands  
@@ -69,13 +69,13 @@ This highlighted how Linux scripts simplify repetitive tasks in system administr
 - Archiving and compressing files  
 - Working with Linux inside an EC2 instance  
 
-## 📝 Notes
+## Notes
 Additional details and learning notes are stored in `topic_notes.md`.
 
-## 📌 Status
-✔️ CSV processing completed  
-✔️ Backup script completed  
-✔️ Batch automation completed  
-✔️ Screenshots uploaded  
-✔️ Notes documented
+## Status
+ CSV processing completed  
+ Backup script completed  
+ Batch automation completed  
+ Screenshots uploaded  
+ Notes documented
 
