@@ -1,42 +1,39 @@
-# STORAGE MODULE NOTES
+# STATIC WEBSITE PROJECT 
 
-## 1. Amazon S3 Overview
-Amazon Simple Storage Service (S3) is used to store files (called *objects*) inside *buckets*.  
-It provides durability, scalability, and affordable storage.
+## 1. Overview
+- Built a simple restaurant website using HTML, CSS, and images.
+- Hosted the website on Amazon S3 using Static Website Hosting.
+- Site includes homepage, menu page, and a basic booking/contact section.
 
-### Key Terms
-- **Bucket:** Container for storing objects  
-- **Object:** The actual file stored in S3  
-- **Region:** Buckets are created in one AWS region  
-- **Key:** Unique path/name of an object  
+## 2. What I Learned
+- How S3 buckets store files (objects) and how folder paths work.
+- How to enable Static Website Hosting on S3.
+- How to write and fix bucket policies to allow public access.
+- How to upload files correctly and test the S3 endpoint.
 
-### Core Features
-- High durability (99.999999999%)  
-- Versioning to keep older file versions  
-- Encryption options (SSE-S3, SSE-KMS)  
-- Access control using Bucket Policies & ACLs  
+## 3. Challenges Faced
+- "Access Denied" errors due to wrong bucket policy.
+- S3 Block Public Access was still on → site couldn’t load.
+- Wrong file paths caused broken images.
+- Forgetting to set `index.html` as the main page.
+- Team files were different → needed to standardize folders.
 
----
+## 4. Wins
+- Website successfully hosted and publicly accessible.
+- Fixed all permissions and policy issues.
+- Learned how S3 endpoints work.
+- Understood how to store images, HTML, and CSS in one bucket.
+- Improved troubleshooting skills through real errors.
 
-## 2. S3 Storage Classes
-Different tiers based on how often the data is accessed:
+## 5. Skills Gained
+- S3 Static Website Hosting
+- Bucket Policies & Permissions
+- HTML/CSS structuring
+- Debugging file paths and access issues
+- GitHub documentation and version control
 
-- **S3 Standard** - for everyday use  
-- **S3 Standard IA** - cheaper, infrequent access  
-- **S3 One Zone IA** - stored in one AZ, lower cost  
-
----
-
-## 3. S3 Static Website Hosting
-S3 can host simple websites using:
-
-- `index.html`- homepage  
-- Bucket Policy - allows public read  
-- Static Website Hosting feature - serves files over the web  
-
-Used in our group project.
-
----
+## 6. Summary
+This project helped me understand S3 much better. I learned how to host a real website, fix permission problems, and organise project files properly. It gave me confidence and a practical AWS project I can show to employers.
 
 ## 4. Security Basics
 - Buckets are private by default  
