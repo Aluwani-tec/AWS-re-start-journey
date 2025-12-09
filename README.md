@@ -1,4 +1,4 @@
-# Hi, I'm Aluwani Mahuluhulu  
+# Hi, I'm Olivia Aluwani Mahuluhulu  
 ### Cloud Support Trainee | AWS re/Start Graduate | Future IT Specialist  
 
 Welcome to my AWS re/Start portfolio.  
