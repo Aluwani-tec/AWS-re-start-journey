@@ -65,5 +65,5 @@ Full details in the **Projects** folder.
 
 ---
 
-## 📬 Contact  
+## Contact  
 Email: **mikoalu@gmail.com**
