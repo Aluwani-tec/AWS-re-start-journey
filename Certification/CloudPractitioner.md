@@ -1,4 +1,4 @@
-# SimuLearn – Computing Module
+# SimuLearn - Computing Module
 
 ![Computing Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/COMPUTING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
 
