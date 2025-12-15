@@ -1,159 +1,152 @@
-# Database Detailed Notes 
+# Database Module 
 
-This file summarizes both the RDS (relational database) and DynamoDB (NoSQL) assignments, as well as hands-on SQL practice done in the EC2 environment.
 
----
-
-# Databases in Practice (Amazon RDS)
-**Image:** Databases in Practice
-
-### What this assignment teaches
-- How to launch a managed relational database using Amazon RDS  
-- How Multi-AZ deployment works  
-- How read replicas improve performance  
-- How RDS handles backups and failover  
-
-### Key Points
-- **Multi-AZ** = high availability (primary DB + standby)  
-- **Read replica** = improves performance for read-heavy apps  
-- RDS automates:
-  - Backups  
-  - Patching  
-  - Monitoring  
-  - Failover  
-- You can launch RDS using engines like MySQL, MariaDB, PostgreSQL, etc.
-
-### Why it matters
-RDS removes the heavy admin work (backups, failover, patching), allowing engineers to focus on application logic.
+These notes explain **step by step** what tasks were completed in the Database lab,
+what actions were taken, and what was learned from each activity.
 
 ---
 
-# First NoSQL Database (DynamoDB)
-**Image:** First NoSQL Database
+## 1. Lab Objectives
 
-### What this assignment teaches
-- How to create a NoSQL table in DynamoDB  
-- How to add items (records) with flexible schema  
-- How to query DynamoDB tables  
-- How to work with partition keys  
+The objectives of this lab were to:
 
-### Key Points
-- **DynamoDB is schema-flexible** → items do not require the same attributes  
-- **Partition key** = required primary identifier  
-- Designed for massive scale  
-- Ideal for:
-  - IoT
-  - Analytics
-  - Gaming
-  - Real-time apps
-
-### Why it matters
-NoSQL databases are extremely fast, scalable, and perfect for applications with large and unstructured data.
+- Understand the difference between relational and NoSQL databases
+- Work with managed databases using Amazon RDS
+- Understand DynamoDB concepts and use cases
+- Perform hands-on SQL operations inside an EC2 instance
+- Create databases, tables, and queries using MySQL/MariaDB
+- Combine data using JOIN operations
 
 ---
 
-# Hands-On SQL Practice (MySQL on EC2)
-**Images:** Terminal screenshots
+## 2. Databases in Practice - Amazon RDS (Conceptual)
 
-### What this assignment teaches
-- How to connect to a MySQL database from an EC2 instance  
-- How to create databases and tables  
-- How to insert data  
-- How to run SELECT queries  
-- How to use INNER JOIN to combine data  
+Amazon RDS was studied to understand how AWS manages relational databases
+without requiring manual server administration.
 
-### Commands Used
+### Key Concepts Learned
+- RDS supports engines such as MySQL, MariaDB, PostgreSQL, and others
+- Multi-AZ deployments improve availability by maintaining a standby replica
+- Read replicas are used to improve performance for read-heavy workloads
+- AWS automatically handles backups, patching, and failover
 
-#### Create the database
-```sql
-CREATE DATABASE restart_lab;
-USE restart_lab;
-```
-
-#### Create the RESTART table
-```sql
-CREATE TABLE RESTART (
-  StudentID INT PRIMARY KEY,
-  StudentName VARCHAR(100),
-  RestartCity VARCHAR(100),
-  GraduationDate DATETIME
-);
-```
-
-#### Insert multiple records
-```sql
-INSERT INTO RESTART VALUES
-(1, 'Olivia', 'Limpopo', '2025-06-30 10:00:00'),
-(2, 'Aisha', 'Johannesburg', '2025-05-29 09:30:00'),
-(3, 'Tebogo', 'Pretoria', '2025-04-15 11:00:00'),
-(4, 'Sipho', 'Cape Town', '2025-07-01 13:00:00'),
-(5, 'Zanele', 'Durban', '2025-03-20 08:45:00'),
-(6, 'Musa', 'Polokwane', '2025-08-22 14:00:00'),
-(7, 'Neo', 'Bloemfontein', '2025-05-29 15:00:00'),
-(8, 'Lerato', 'Tzaneen', '2025-05-15 10:30:00'),
-(9, 'Karabo', 'Soweto', '2025-07-25 09:45:00'),
-(10, 'Kabelo', 'Mokopane', '2025-08-05 16:00:00');
-```
-
-#### Query the table
-```sql
-SELECT * FROM RESTART;
-```
+### Why This Matters
+Using RDS allows engineers to focus on application development rather than
+database maintenance and infrastructure management.
 
 ---
 
-# Creating a second table: CLOUD_PRACTITIONER
-```sql
-CREATE TABLE CLOUD_PRACTITIONER (
-  StudentID INT,
-  CertificationDate DATETIME
-);
-```
+## 3. First NoSQL Database - DynamoDB (Conceptual)
 
-### Insert records
-```sql
-INSERT INTO CLOUD_PRACTITIONER VALUES
-(1, '2025-07-01 08:00:00'),
-(3, '2025-07-09 09:00:00'),
-(5, '2025-07-15 10:30:00'),
-(7, '2025-07-20 11:15:00'),
-(9, '2025-07-25 14:00:00');
-```
+DynamoDB was reviewed to understand NoSQL database design.
 
-### Query the table
-```sql
-SELECT * FROM CLOUD_PRACTITIONER;
-```
+### Key Concepts Learned
+- Schema-flexible design (items do not need identical attributes)
+- Partition key is required to uniquely identify items
+- Designed for massive scale and low latency
+- Ideal for real-time and high-traffic applications
+
+### Typical Use Cases
+- IoT platforms
+- Gaming leaderboards
+- Analytics workloads
+- Real-time web and mobile applications
 
 ---
 
-# Using INNER JOIN
-Combine the data from both tables:
+## 4. Hands-On SQL Practice – MySQL/MariaDB on EC2
 
-```sql
-SELECT
-  RESTART.StudentID,
-  RESTART.StudentName,
-  CLOUD_PRACTITIONER.CertificationDate
-FROM RESTART
-INNER JOIN CLOUD_PRACTITIONER
-  ON RESTART.StudentID = CLOUD_PRACTITIONER.StudentID;
-```
-
-### What this teaches
-- INNER JOIN returns only matching data  
-- Useful when:
-  - Combining user info + certifications  
-  - Merging orders + customers  
-  - Linking products + categories  
+This section involved **direct interaction with a database engine**
+running on an EC2 instance.
 
 ---
 
-# Summary of Database Module
-- **RDS Assignment:** Multi-AZ, read replicas, backups  
-- **DynamoDB Assignment:** NoSQL, flexible schema, fast scaling  
-- **SQL Practice:** Creating tables, inserting data, JOIN operations  
-- You completed both the cloud architecture AND hands-on database tasks  
+### Step 1 – Connecting to the Database Engine
+
+After connecting to the EC2 instance using **EC2 Instance Connect**,
+I accessed the MariaDB/MySQL service using the root user.
+
+This confirmed that the database service was running correctly
+and ready to accept SQL commands.
 
 ---
+
+### Step 2 – Viewing Existing Databases
+
+I checked the databases already present on the system
+to understand the initial environment.
+
+This displayed system databases such as:
+- information_schema
+- mysql
+- performance_schema
+
+### Step 3 – Creating a New Database
+
+I created a new database to store lab data.
+CREATE DATABASE world;
+USE world;
+This step confirmed that I had permission to create and manage databases.
+
+Step 4 – Creating Tables
+
+I created a table named country with structured columns
+to store geographical and demographic data.
+
+This required defining:
+
+- Data types
+- Primary key
+- Default values
+- Nullable and non-nullable fields
+**Screenshot:** Creating database tables
+  
+![MySQL create tables](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Database/images/mysql_create_tables.PNG?raw=true)
+
+### Step 5 - Verifying Tables and Columns
+After table creation, I verified the structure of the table
+  SHOW TABLES;
+  SHOW COLUMNS FROM world.country;
+This confirmed that all fields were created correctly
+with the expected data types and constraints.
+
+### Step 6 - Creating Additional Tables
+
+To simulate a realistic relational database scenario,
+I created additional tables for learners and certifications.
+
+Example structure:
+
+| Table Name           | Purpose                                  | Key Columns                         | Notes |
+|----------------------|------------------------------------------|--------------------------------------|-------|
+| RESTART              | Stores learner information               | StudentID (PK), StudentName, City    | Primary table holding core learner data |
+| CLOUD_PRACTITIONER   | Stores certification completion records  | StudentID, CertificationDate         | Linked to RESTART using StudentID |
+
+### Table 7 – Sample Data Inserted into Tables
+
+| StudentID | StudentName | City          | GraduationDate        | CertificationDate |
+|-----------|-------------|---------------|-----------------------|-------------------|
+| 1         | Olivia      | Limpopo       | 2025-06-30 10:00:00   | 2025-07-01 08:00:00 |
+| 3         | Tebogo      | Pretoria      | 2025-04-15 11:00:00   | 2025-07-09 09:00:00 |
+| 5         | Zanele      | Durban        | 2025-03-20 08:45:00   | 2025-07-15 10:30:00 |
+| 7         | Neo         | Bloemfontein  | 2025-05-29 15:00:00   | 2025-07-20 11:15:00 |
+| 9         | Karabo      | Soweto        | 2025-07-25 09:45:00   | 2025-07-25 14:00:00 |
+
+### Step 8 - Querying Data Using INNER JOIN
+
+To combine related data from different tables,
+I used an INNER JOIN.
+
+| Element                  | Description |
+|--------------------------|-------------|
+| JOIN Type                | INNER JOIN |
+| Join Condition           | RESTART.StudentID = CLOUD_PRACTITIONER.StudentID |
+| Data Returned            | Only records where StudentID exists in both tables |
+| Columns Displayed        | StudentID, StudentName, CertificationDate |
+| Purpose                  | Combine learner information with certification status |
+| Real-World Use Case      | Linking users with completed certifications |
+
+This returned only records that existed in both tables.
+
+**Screenshot:** SELECT query with INNER JOIN
 
