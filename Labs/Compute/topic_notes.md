@@ -72,5 +72,29 @@ Availability Zone: us-east-1a
 Private IP: 10.10.0.10
 This confirmed that the scheduling system was running on a small instance size, which justified the need for an upgrade.
 
-4. Reviewing Application Logs (Before Upgrade)
+### 4. Reviewing Application Logs (Before Upgrade)
+ ![Instance Metadata](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn1.PNG?raw=true)
+
+ ### Steps performed
+
+From inside the instance, ran:
+tail -f aws_compute_solutions.log
+
+
+Observed live log output while the application was running.
+
+### Observations
+
+The application was actively receiving HTTP requests.
+Log entries included:
+Instance metadata
+Request paths
+Response codes (e.g. 404 for unsupported paths)
+Some protocol warnings appeared (e.g. HTTP version not supported).
+
+### Why this step mattered
+
+This step ensured the application was healthy before resizing and provided a baseline for comparison after the upgrade.
+
+   ### 5.5. Comparing EC2 Instance Types (Upgrade Decision)
 
