@@ -178,4 +178,12 @@ This returned only records that existed in both tables.
 - INNER JOIN is essential for combining related data
 - Choosing the correct database type depends on the application workload
 
+### 8. Conclusion
+
+This database lab provided both architectural understanding
+and hands-on technical experience.
+
+The combination of RDS concepts, DynamoDB exposure,
+and real SQL execution strengthened my understanding
+of database systems in cloud environments.
   
