@@ -1,69 +1,53 @@
 # Compute Module 
 
-This folder contains all my work for the **Compute module**, including screenshots, labs, summaries, and troubleshooting notes.
+This folder documents a SimuLearn Compute lab completed as part of the AWS re/Start Programme.  
+The lab focuses on **upgrading an Amazon EC2 instance** to provide greater computing power and memory capacity for a school’s class scheduling system.
 
 ---
 
-## Topics Covered
-- Amazon EC2
-- Instance types & families
-- AMIs (Amazon Machine Images)
-- User data scripts
-- Key pairs
-- Security Groups
-- Regions & Availability Zones
-- EC2 instance lifecycle (start, stop, reboot, terminate)
+## Scenario: Computing Solutions
+
+A school operates a class scheduling system hosted on an Amazon EC2 instance.  
+Due to increasing demand, the system requires **more compute and memory resources** to remain responsive and reliable.
+
+**Task Requirement:**  
+Upgrade the EC2 instance to a **larger instance type** and verify that the system continues to run correctly after the change.
 
 ---
 
-## Labs Completed
+## What This Lab Covers
 
-### 1. Cloud First Steps
-- Basic cloud concepts
-- EC2 architecture overview
-- Screenshot included
-
----
-
-### 2. Cloud Computing Essentials
-- EC2 instances and usage
-- Regions & availability zones
-- Screenshot included
+- Reviewing an existing EC2 instance configuration
+- Accessing instance metadata from inside the server
+- Inspecting application logs
+- Comparing EC2 instance families and sizes
+- Performing a controlled instance type upgrade
+- Verifying application stability after the upgrade
 
 ---
 
-### 3. Cloud Economics
-- Shared responsibility model
-- Cost optimization basics
-- Screenshot included
 
 ---
 
-## Screenshots
-All PNG files in this folder relate to the Compute module.
+## Outcome
+
+- The EC2 instance was successfully upgraded from a smaller instance type to a larger one.
+- Application logs and metadata confirmed the new configuration.
+- The scheduling system continued operating normally after the upgrade.
+- The task demonstrated how to safely scale compute and memory resources on AWS.
 
 ---
 
-## Key Learnings
-- How to launch EC2 instances
-- Understanding instance lifecycle
-- Using user-data scripts
-- Managing permissions and SSH access
-- Stopping, starting, rebooting, and terminating instances
+## Key Skills Demonstrated
+
+- EC2 instance management
+- Right-sizing compute resources
+- Reading and interpreting application logs
+- Understanding instance families and use cases
+- Applying AWS operational best practices
 
 ---
 
-## Tools Used
-- AWS Management Console
-- CloudQuest
-- EC2 Dashboard
-- IAM
-- Terminal (SSH)
+## Notes
 
----
-
-## Status
- Compute module completed  
- All screenshots uploaded  
- Notes stored in `topic_notes.md`
-
+Detailed technical steps, screenshots, observations, challenges, and lessons learned are documented in **topic_notes.md**.
