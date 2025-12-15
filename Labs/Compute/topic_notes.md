@@ -97,7 +97,7 @@ Observed live log output while the application was running.
 
 This step ensured the application was healthy before resizing and provided a baseline for comparison after the upgrade.
 
-   ### 5.5. Comparing EC2 Instance Types (Upgrade Decision)
+   ### 5. Comparing EC2 Instance Types (Upgrade Decision)
    **Screenshot:**
    ![Instance Metadata](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn3.PNG?raw=true)
 
@@ -123,7 +123,51 @@ Because the scheduling system required more memory and better performance, a lar
 ### 6. Changing the Instance Type (Upgrade Execution)
 
 **Screenshot:**
+![Instance comparison table](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn4.PNG?raw=true)
+
+## Steps performed
+
+1.Selected the AWS Computing Solutions instance.
+2. Stopped the instance: Instance state → Stop instance
+3. Modified the instance type: Actions → Instance settings → Modify instance type
+4. Selected: m4.large
+5. Saved the change.
+6. Restarted the instance.
+7. Waited for status checks to pass.
+
+### 7. Verifying the Upgrade
+
+1. Reconnected using EC2 Instance Connect.
+2. Navigated back to the application folder: cd sample_app
+                                             tail -f aws_compute_solutions.log
 
 
+3. Confirmed that:
+   - The instance was running successfully
+   - Logs now reflected the new instance type
+   - The application continued functioning without errors
 
+This confirmed the upgrade was successful and the scheduling system now had greater compute and memory capacity.
 
+### 8. Challenges Encountered
+
+- Attempted to modify instance type while it was running (not allowed).
+- Initial concern about log warnings that were actually normal traffic noise.
+- Understanding which instance family best matched the workload.
+
+All issues were resolved by following AWS best practices.
+
+### 9. Key Learning Outcomes
+
+- How to safely upgrade an EC2 instance for better performance.
+- Why instances must be stopped before resizing.
+- How to validate changes using logs and metadata.
+- How to choose instance types based on workload needs.
+- How compute and memory directly impact application performance.
+
+### 10. Conclusion
+
+The task of upgrading the EC2 instance was completed successfully.
+The school’s scheduling system now runs on a larger instance type, providing improved performance and memory capacity while maintaining application stability.
+
+This lab demonstrated real-world EC2 upgrade procedures aligned with AWS operational standards.
