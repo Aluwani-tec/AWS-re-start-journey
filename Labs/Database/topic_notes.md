@@ -122,7 +122,10 @@ Example structure:
 | RESTART              | Stores learner information               | StudentID (PK), StudentName, City    | Primary table holding core learner data |
 | CLOUD_PRACTITIONER   | Stores certification completion records  | StudentID, CertificationDate         | Linked to RESTART using StudentID |
 
+
+
 ### Table 7 – Sample Data Inserted into Tables
+
 
 | StudentID | StudentName | City          | GraduationDate        | CertificationDate |
 |-----------|-------------|---------------|-----------------------|-------------------|
@@ -132,10 +135,12 @@ Example structure:
 | 7         | Neo         | Bloemfontein  | 2025-05-29 15:00:00   | 2025-07-20 11:15:00 |
 | 9         | Karabo      | Soweto        | 2025-07-25 09:45:00   | 2025-07-25 14:00:00 |
 
+
 ### Step 8 - Querying Data Using INNER JOIN
 
 To combine related data from different tables,
 I used an INNER JOIN.
+
 
 | Element                  | Description |
 |--------------------------|-------------|
