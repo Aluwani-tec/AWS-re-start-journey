@@ -54,14 +54,14 @@ DynamoDB was reviewed to understand NoSQL database design.
 
 ---
 
-## 4. Hands-On SQL Practice – MySQL/MariaDB on EC2
+## 4. Hands-On SQL Practice - MySQL/MariaDB on EC2
 
 This section involved **direct interaction with a database engine**
 running on an EC2 instance.
 
 ---
 
-### Step 1 – Connecting to the Database Engine
+### Step 1 - Connecting to the Database Engine
 
 After connecting to the EC2 instance using **EC2 Instance Connect**,
 I accessed the MariaDB/MySQL service using the root user.
@@ -81,14 +81,14 @@ This displayed system databases such as:
 - mysql
 - performance_schema
 
-### Step 3 – Creating a New Database
+### Step 3 - Creating a New Database
 
 I created a new database to store lab data.
 CREATE DATABASE world;
 USE world;
 This step confirmed that I had permission to create and manage databases.
 
-Step 4 – Creating Tables
+Step 4 - Creating Tables
 
 I created a table named country with structured columns
 to store geographical and demographic data.
@@ -124,7 +124,7 @@ Example structure:
 
 
 
-### Table 7 – Sample Data Inserted into Tables
+### Table 7 - Sample Data Inserted into Tables
 
 
 | StudentID | StudentName | City          | GraduationDate        | CertificationDate |
@@ -155,3 +155,27 @@ This returned only records that existed in both tables.
 
 **Screenshot:** SELECT query with INNER JOIN
 
+![MySQL SELECT JOIN result](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Database/images/mysql_select_join.PNG?raw=true)
+
+### 5. Challenges Faced
+
+- Understanding when to use RDS vs DynamoDB initially caused confusion
+- Remembering SQL syntax required careful attention
+- Designing tables with correct data types and constraints took practice
+- JOIN operations required clear understanding of relational keys
+
+### 6. Key Wins and Breakthroughs
+
+- Successfully created and managed databases from the command line
+- Gained confidence working directly with SQL
+- Understood how relational databases link data across tables
+- Clearly distinguished between relational and NoSQL use cases
+
+### 7. Lessons Learned
+
+- Managed databases reduce operational overhead significantly
+- SQL structure and planning is critical before creating tables
+- INNER JOIN is essential for combining related data
+- Choosing the correct database type depends on the application workload
+
+  
