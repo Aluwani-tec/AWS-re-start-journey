@@ -1,93 +1,76 @@
-# Compute Module Detailed Notes 
+# Compute Module Lab Notes
 
-These notes summarize the four CloudQuest assignments related to the Compute module.
+## Scenario: Computing Solutions
 
----
+The school wants to upgrade its **class scheduling system**, which is currently running on an Amazon EC2 instance.  
+The system is experiencing performance limitations, so the goal is to **increase computing power and memory capacity**.
 
-## Cloud Computing Essentials
-**Image:** Cloud Computing Essentials
-
-### What this assignment teaches
-- How to enable static website hosting on Amazon S3
-- How to configure bucket policy for public access
-- Basic understanding of S3 as a storage & hosting service
-
-### Key Points
-- S3 can host static websites (HTML/CSS/JS)
-- Enable "Static Website Hosting" inside bucket properties
-- Public access requires a bucket policy that allows `s3:GetObject`
-- You can rename index.html depending on requirements (e.g., waves.html)
-
-### Why it matters
-Static website hosting on S3 is cost-effective, scalable, and serverless. 
-It removes the need for EC2 servers for simple websites.
+**Task Requirement:**  
+Change the EC2 instance to a **larger instance type** and verify that the system continues running correctly.
 
 ---
 
-## Cloud Economics
-**Image:** Cloud Economics
+## 1. Lab Objective
 
-### What this assignment teaches
-- How traditional IT differs from cloud elasticity
-- How demand affects resource usage
-- How to estimate EC2 pricing
+The objective of this lab was to:
 
-### Key Points
-- Traditional IT = upfront cost + unused capacity
-- Cloud = pay-as-you-go + resources match demand automatically
-- Auto Scaling adjusts capacity based on customer demand
-- Instance types (e.g., t2.micro, t3.medium) influence cost
-- You can generate pricing estimates using AWS Cost Calculator
-
-### Why it matters
-Understanding cloud pricing helps optimize cost and avoid over-provisioning.
+- Review the existing EC2 instance hosting the scheduling system
+- Confirm the current instance size and configuration
+- Access the instance to validate metadata
+- Inspect application logs before and after the change
+- Compare available EC2 instance types
+- Upgrade the instance to a larger type
+- Verify that the upgrade was successful
 
 ---
 
-## Cloud First Steps
-**Image:** Cloud First Steps
+## 2. Initial EC2 Instance Review (Baseline)
 
-### What this assignment teaches
-- How to launch your first EC2 instance
-- How to deploy instances across multiple Availability Zones
-- How to automate tasks using a user-data script
+**Screenshot:**  
+![EC2 Instance Overview](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn.PNG?raw=true)
 
-### Key Points
-- EC2 = virtual server running in the cloud
-- Regions contain multiple Availability Zones for high availability
-- Launching instances in different AZs improves reliability
-- User-data scripts run at the first boot (install packages, write files, etc.)
+### Steps performed
 
-### Why it matters
-This assignment builds foundational EC2 knowledge used across all cloud workloads.
+1. Logged into the **AWS Management Console**.
+2. Set the **Region** to: US East (N. Virginia) us-east-1
+3. 3. Opened the **EC2** service.
+4. Clicked **Instances** from the left navigation menu.
+5. Selected the instance named: AWS Computing Solutions
 
----
+   
+### Baseline configuration observed
 
-## Computing Solutions
-**Image:** Computing Solutions
+- Instance state: **Running**
+- Instance type: **t3.micro**
+- Availability Zone: **us-east-1a**
+- Private IP address: **10.10.0.10**
+- Status checks: **Passed**
 
-### What this assignment teaches
-- How to select the correct EC2 instance type
-- How to scale up for better performance
-- How to connect using EC2 Instance Connect
-- How to view EC2 instance metadata (instance ID, region, public IP)
-
-### Key Points
-- Scaling up means choosing a larger instance (e.g., m4.large)
-- Instance metadata shows system information through `http://169.254.169.254`
-- EC2 Instance Connect is a browser-based SSH alternative
-- AWS Systems Manager integrates with EC2 for management tasks
-
-### Why it matters
-Choosing the correct compute resources improves performance and user experience.
+This screenshot represents the **starting point** before increasing compute and memory capacity.
 
 ---
 
-## Summary of All Assignments
-- **Cloud Computing Essentials** → S3 website hosting basics  
-- **Cloud Economics** → cloud pricing + cost optimization  
-- **Cloud First Steps** → EC2 basics + user-data + AZs  
-- **Computing Solutions** → instance types + scaling + metadata  
+## 3. Accessing Instance Metadata (Inside the Server)
 
----
+**Screenshot:**  
+![Instance Metadata](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn1.PNG?raw=true)
+
+### Steps performed
+
+1. With the instance selected, clicked: Connect → EC2 Instance Connect
+2. 2. Used the default user (`ec2-user`) and opened the browser terminal.
+3. Navigated to the application directory:
+
+bash : cd sample_app
+ls
+
+4. The application displayed instance metadata.
+Metadata confirmed
+Instance Type: t3.micro
+Instance ID: i-060c05b5b153b83b1
+Availability Zone: us-east-1a
+Private IP: 10.10.0.10
+This confirmed that the scheduling system was running on a small instance size, which justified the need for an upgrade.
+
+4. Reviewing Application Logs (Before Upgrade)
 
