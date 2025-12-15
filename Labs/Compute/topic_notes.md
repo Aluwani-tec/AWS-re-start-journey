@@ -73,6 +73,7 @@ Private IP: 10.10.0.10
 This confirmed that the scheduling system was running on a small instance size, which justified the need for an upgrade.
 
 ### 4. Reviewing Application Logs (Before Upgrade)
+**Screenshot:**
  ![Instance Metadata](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn1.PNG?raw=true)
 
  ### Steps performed
@@ -85,16 +86,44 @@ Observed live log output while the application was running.
 
 ### Observations
 
-The application was actively receiving HTTP requests.
-Log entries included:
-Instance metadata
-Request paths
-Response codes (e.g. 404 for unsupported paths)
-Some protocol warnings appeared (e.g. HTTP version not supported).
+- The application was actively receiving HTTP requests.
+- Log entries included:
+- Instance metadata
+- Request paths
+- Response codes (e.g. 404 for unsupported paths)
+- Some protocol warnings appeared (e.g. HTTP version not supported).
 
 ### Why this step mattered
 
 This step ensured the application was healthy before resizing and provided a baseline for comparison after the upgrade.
 
    ### 5.5. Comparing EC2 Instance Types (Upgrade Decision)
+   **Screenshot:**
+   ![Instance Metadata](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Labs/Compute/images/computing%20simulearn3.PNG?raw=true)
+
+### Steps performed
+
+In the EC2 console, opened: Instance types
+Compared the following instance types:
+- t3.large
+- c5.large
+- r5.large
+  
+### Comparison results
+ | Instance Type | vCPUs | Memory | Use Case |
+|--------------|-------|--------|----------|
+| t3.large     | 2     | 8 GiB  | General-purpose workloads |
+| c5.large     | 2     | 4 GiB  | Compute-intensive tasks |
+| r5.large     | 2     | 16 GiB | Memory-intensive applications |
+
+### Decision
+
+Because the scheduling system required more memory and better performance, a larger general-purpose instance was selected for the upgrade.
+
+### 6. Changing the Instance Type (Upgrade Execution)
+
+**Screenshot:**
+
+
+
 
