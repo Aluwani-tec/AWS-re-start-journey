@@ -1,29 +1,99 @@
-# Certification Folder
+# Certifications - AWS re/Start Programme
 
-This folder contains the certifications and badges completed during my AWS re/Start programme. Each item represents practical learning and progress toward cloud fundamentals.
+This folder contains the certifications, training badges, and proof of learning
+completed during my participation in the **AWS re/Start Programme**.
 
-## Completed Certifications
+Each certification represents structured learning, hands-on activities,
+and progress toward cloud and IT fundamentals.
 
-### • AI Practitioner Certificate
-Covers introductory AI concepts and practical use of AI tools to support technical tasks and problem-solving.
+---
 
-### • GenAI for Decision Makers
-Focuses on how generative AI can be applied in real environments, including strategy, value creation, and responsible use.
+## Completed Certifications & Badges
 
-### • AWS Cloud Quest: Cloud Practitioner – Training Badge
+### 1. AI Practitioner Certificate
+
+![AI Practitioner Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/AI%20PRACTITIONER.SCREENSHOT.PNG?raw=true)
+
+This certification introduced foundational artificial intelligence concepts,
+including practical use of AI tools, prompt techniques, and problem-solving
+approaches that support technical and analytical tasks.
+
+**Key focus areas:**
+- AI fundamentals
+- Practical AI usage
+- Ethical and responsible AI awareness
+
+---
+
+### 2. GenAI for Decision Makers Certificate
+
+![GenAI Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/GENAI.SCREENSHOT.PNG?raw=true)
+
+This certification focused on applying generative AI in real-world environments,
+with emphasis on business value, strategy, and responsible adoption.
+
+**Key focus areas:**
+- GenAI use cases
+- Decision support
+- Value creation
+- Responsible AI principles
+
+---
+
+### 3. AWS Cloud Quest - Cloud Practitioner Training Badge
 
 ![Cloud Practitioner Badge](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/aws-cloud-quest-cloud-practitioner-training-badge.png?raw=true)
 
-Earned by completing hands-on cloud challenges that introduced the basics of compute, storage, networking, IAM, and cloud architecture.
+This badge was earned by completing interactive, hands-on cloud challenges
+through AWS Cloud Quest.
+
+The challenges covered core AWS concepts through practical scenarios.
+
+**Skills demonstrated:**
+- Compute fundamentals
+- Storage services
+- Networking basics
+- IAM fundamentals
+- Introductory AWS architecture concepts
+
+---
+
+### 4. SimuLearn - Compute Module Certificate
+
+![SimuLearn Compute Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/COMPUTING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
+
+This certificate validates completion of the SimuLearn Compute module,
+which focused on understanding Amazon EC2, instance types,
+and right-sizing workloads based on system requirements.
+
+---
+
+### 5. SimuLearn - Domain Module Certificate
+
+![SimuLearn Domain Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/SIMULEARN%20DOMAIN.SCREENSHOT.PNG?raw=true)
+
+This module covered core cloud and IT domain fundamentals
+that support all other AWS learning areas within the programme.
+
+---
 
 ## In Progress
 
-### • AWS Cloud Practitioner Certification
-Currently preparing for the final exam. Study areas include:
-- AWS global infrastructure  
-- Core services (EC2, S3, RDS, Lambda, IAM)  
-- Cloud architecture principles  
-- Security basics  
-- Cost and billing fundamentals  
+### AWS Cloud Practitioner Certification
 
-All certifications in this folder form part of my AWS re/Start portfolio and show my growth throughout the programme.
+Currently preparing for the AWS Cloud Practitioner final exam.
+
+**Study areas include:**
+- AWS global infrastructure
+- Core services (EC2, S3, RDS, Lambda, IAM)
+- Cloud architecture principles
+- Security fundamentals
+- Cost management and billing basics
+
+---
+
+## Summary
+
+All certifications and badges in this folder form part of my
+**AWS re/Start portfolio** and demonstrate continuous learning,
+hands-on engagement, and growth throughout the programme.
