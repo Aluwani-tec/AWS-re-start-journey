@@ -10,6 +10,9 @@ The architecture demonstrates how AWS services can be combined to support a mode
 
 The Praesignis 3D E-Commerce platform supports a new form of online shopping where customers interact with large and complex 3D product assets.
 
+
+![3D E-Commerce Architecture](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Projects/3D%20E-Commerce%20Architecture/3D1.PNG?raw=true)
+
 Because 3D models are significantly heavier than traditional images, the system required:
 - High availability  
 - Low latency global access  
@@ -76,3 +79,4 @@ This project was completed as group work with the following contributions:
 ## Conclusion
 
 This architecture represents a realistic AWS-based solution for delivering high-quality 3D e-commerce experiences. The design aligns with modern cloud engineering practices and demonstrates practical understanding of scalability, security, performance, and availability within AWS.
+
