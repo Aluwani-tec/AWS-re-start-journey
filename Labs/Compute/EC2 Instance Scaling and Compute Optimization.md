@@ -33,7 +33,7 @@ The objective of this lab was to:
 
 1. Logged into the **AWS Management Console**.
 2. Set the **Region** to: US East (N. Virginia) us-east-1
-3. 3. Opened the **EC2** service.
+3. Opened the **EC2** service.
 4. Clicked **Instances** from the left navigation menu.
 5. Selected the instance named: AWS Computing Solutions
 
@@ -58,19 +58,17 @@ This screenshot represents the **starting point** before increasing compute and 
 ### Steps performed
 
 1. With the instance selected, clicked: Connect → EC2 Instance Connect
-2. 2. Used the default user (`ec2-user`) and opened the browser terminal.
+2. Used the default user (`ec2-user`) and opened the browser terminal.
 3. Navigated to the application directory:
 
-bash : cd sample_app
-ls
 
 4. The application displayed instance metadata.
-Metadata confirmed
-Instance Type: t3.micro
-Instance ID: i-060c05b5b153b83b1
-Availability Zone: us-east-1a
-Private IP: 10.10.0.10
-This confirmed that the scheduling system was running on a small instance size, which justified the need for an upgrade.
+- Metadata confirmed
+- Instance Type: t3.micro
+- Instance ID: i-060c05b5b153b83b1
+- Availability Zone: us-east-1a
+- Private IP: 10.10.0.10
+- This confirmed that the scheduling system was running on a small instance size, which justified the need for an upgrade.
 
 ### 4. Reviewing Application Logs (Before Upgrade)
 **Screenshot:**
