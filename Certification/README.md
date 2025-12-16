@@ -75,6 +75,11 @@ and right-sizing workloads based on system requirements.
 This module covered core cloud and IT domain fundamentals
 that support all other AWS learning areas within the programme.
 
+### 6. 
+
+Completed the SimuLearn Computing module.
+This activity covered cloud compute tasks, including launching and managing EC2 instances, working with CloudShell, and basic troubleshooting in AWS.
+
 ---
 
 ## In Progress
