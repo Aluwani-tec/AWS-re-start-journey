@@ -1,10 +1,10 @@
-# Certifications - AWS re/Start Programme
+# Certifications – AWS re/Start Programme
 
 This folder contains the certifications, training badges, and proof of learning
 completed during my participation in the **AWS re/Start Programme**.
 
 Each certification represents structured learning, hands-on activities,
-and progress toward cloud and IT fundamentals.
+and demonstrated progress toward cloud computing and IT fundamentals.
 
 ---
 
@@ -15,12 +15,13 @@ and progress toward cloud and IT fundamentals.
 ![AI Practitioner Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/AI%20PRACTITIONER.SCREENSHOT.PNG?raw=true)
 
 This certification introduced foundational artificial intelligence concepts,
-including practical use of AI tools, prompt techniques, and problem-solving
-approaches that support technical and analytical tasks.
+including the practical use of AI tools, prompt techniques, and structured
+problem-solving approaches to support technical and analytical tasks.
 
 **Key focus areas:**
 - AI fundamentals
 - Practical AI usage
+- Prompt engineering basics
 - Ethical and responsible AI awareness
 
 ---
@@ -30,24 +31,24 @@ approaches that support technical and analytical tasks.
 ![GenAI Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/GENAI.SCREENSHOT.PNG?raw=true)
 
 This certification focused on applying generative AI in real-world environments,
-with emphasis on business value, strategy, and responsible adoption.
+with an emphasis on business value, strategic decision-making, and responsible adoption.
 
 **Key focus areas:**
-- GenAI use cases
-- Decision support
-- Value creation
+- Generative AI use cases
+- Decision support and insights
+- Business value creation
 - Responsible AI principles
 
 ---
 
-### 3. AWS Cloud Quest - Cloud Practitioner Training Badge
+### 3. AWS Cloud Quest – Cloud Practitioner Training Badge
 
 ![Cloud Practitioner Badge](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/aws-cloud-quest-cloud-practitioner-training-badge.png?raw=true)
 
 This badge was earned by completing interactive, hands-on cloud challenges
 through AWS Cloud Quest.
 
-The challenges covered core AWS concepts through practical scenarios.
+The challenges introduced core AWS concepts using practical, scenario-based learning.
 
 **Skills demonstrated:**
 - Compute fundamentals
@@ -58,35 +59,69 @@ The challenges covered core AWS concepts through practical scenarios.
 
 ---
 
-### 4. SimuLearn - Compute Module Certificate
+### 4. SimuLearn – Compute Module Certificate
 
 ![SimuLearn Compute Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/COMPUTING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
 
-This certificate validates completion of the SimuLearn Compute module,
-which focused on understanding Amazon EC2, instance types,
-and right-sizing workloads based on system requirements.
+This certificate validates completion of the SimuLearn Compute module, which focused
+on understanding Amazon EC2, instance types, and workload optimization.
+
+**Key focus areas:**
+- Launching and managing EC2 instances
+- Instance sizing and performance considerations
+- Basic troubleshooting in AWS environments
 
 ---
 
-### 5. SimuLearn - Domain Module Certificate
+### 5. SimuLearn – Networking Module Certificate
+
+![SimuLearn Networking Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/NETWORKING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
+
+This module focused on AWS networking fundamentals and how cloud resources communicate
+securely and efficiently within AWS environments.
+
+**Key focus areas:**
+- Amazon VPC fundamentals
+- Subnets and CIDR blocks
+- Routing concepts
+- Network isolation and security principles
+
+---
+
+### 6. SimuLearn – Auto Healing and Scaling Module
+
+![Auto Healing and Scaling](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/Auto%20healing%20and%20scaling.PNG?raw=true)
+
+This module introduced concepts related to application availability and elasticity
+using AWS compute services.
+
+**Key focus areas:**
+- Auto Scaling Groups
+- Launch templates and AMIs
+- High availability concepts
+- Self-healing infrastructure principles
+
+---
+
+### 7. SimuLearn – Domain Module Certificate
 
 ![SimuLearn Domain Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/SIMULEARN%20DOMAIN.SCREENSHOT.PNG?raw=true)
 
-This module covered core cloud and IT domain fundamentals
-that support all other AWS learning areas within the programme.
+This module covered core cloud and IT domain fundamentals that support all other AWS
+learning areas within the AWS re/Start programme.
 
-### 6. 
-
-Completed the SimuLearn Computing module.
-This activity covered cloud compute tasks, including launching and managing EC2 instances, working with CloudShell, and basic troubleshooting in AWS.
+**Key focus areas:**
+- Cloud computing concepts
+- IT infrastructure fundamentals
+- Foundational technical terminology
 
 ---
 
 ## In Progress
 
-### AWS Cloud Practitioner Certification
+### AWS Certified Cloud Practitioner
 
-Currently preparing for the AWS Cloud Practitioner final exam.
+Currently preparing for the AWS Certified Cloud Practitioner final exam.
 
 **Study areas include:**
 - AWS global infrastructure
@@ -100,5 +135,6 @@ Currently preparing for the AWS Cloud Practitioner final exam.
 ## Summary
 
 All certifications and badges in this folder form part of my
-**AWS re/Start portfolio** and demonstrate continuous learning,
-hands-on engagement, and growth throughout the programme.
+**AWS re/Start learning portfolio** and demonstrate continuous learning,
+hands-on engagement, and practical exposure to cloud technologies
+throughout the programme.
