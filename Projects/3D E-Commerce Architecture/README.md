@@ -1,82 +1,113 @@
-# 3D Architecture Showcase
+# 3D E-Commerce Cloud Architecture
 
-This folder documents a cloud architecture solution designed during the AWS re/Start Programme as part of a group-based practical assignment facilitated by Praesignis.
+This project showcases a cloud architecture designed to support a modern
+3D e-commerce platform where users interact with high-quality, immersive
+3D product models.
 
-The architecture demonstrates how AWS services can be combined to support a modern 3D e-commerce platform that delivers high-quality interactive 3D product models to users globally.
-
----
+The focus of this architecture is performance, scalability, security,
+and reliability while keeping operational costs under control.
+Design decisions were made to reflect real-world production constraints
+and user experience expectations.
 
 ## Project Overview
 
-The Praesignis 3D E-Commerce platform supports a new form of online shopping where customers interact with large and complex 3D product assets.
+Traditional e-commerce platforms rely on static images and lightweight
+media. A 3D commerce platform introduces a very different workload.
 
+3D assets are significantly larger, require faster delivery, and place
+continuous demand on backend services. This architecture was designed to
+address those challenges while remaining flexible and cloud-native.
 
-![3D E-Commerce Architecture](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Projects/3D%20E-Commerce%20Architecture/3D1.PNG?raw=true)
+The solution prioritises:
 
-Because 3D models are significantly heavier than traditional images, the system required:
-- High availability  
-- Low latency global access  
-- Strong security controls  
-- Scalable compute capacity  
-- Cost-efficient storage and delivery  
-
-The solution was designed using AWS best practices and is deployed across multiple Availability Zones to ensure reliability and fault tolerance.
-
----
+- High availability across multiple Availability Zones
+- Low-latency global content delivery
+- Scalable compute resources
+- Strong security at the edge and backend
+- Cost-efficient storage and optimisation
 
 ## Architecture Summary
 
-User traffic begins at **Amazon Route 53**, which handles DNS routing and health checks to ensure users are directed only to healthy endpoints.
+User traffic enters the system through Amazon Route 53, which handles DNS
+routing and health checks to ensure requests are sent only to healthy
+application endpoints.
 
-Traffic then passes through **AWS WAF** and **AWS Shield**, providing protection against common web exploits and distributed denial-of-service (DDoS) attacks.
+Traffic is filtered through AWS WAF and protected by AWS Shield, providing
+defence against common web exploits and distributed denial-of-service attacks.
 
-Static content such as 3D models, textures, and images is delivered using **Amazon CloudFront**, with **Amazon S3** acting as the origin storage. This allows global caching of large assets and significantly improves performance for end users.
+Static content such as 3D models, textures, and images is delivered using
+Amazon CloudFront, with Amazon S3 acting as the origin. This enables global
+edge caching and significantly improves performance for users in different
+regions.
 
-Requests that require backend processing are routed through an **Application Load Balancer (ALB)** to **EC2 instances** deployed across two Availability Zones. These instances are managed using an **Auto Scaling Group** to adjust capacity based on demand.
+Requests that require backend processing are routed through an Application
+Load Balancer to EC2 instances deployed across multiple Availability Zones.
+An Auto Scaling Group dynamically adjusts capacity based on traffic demand.
 
-Relational data is stored in **Amazon RDS (Multi-AZ)**, enabling automatic failover and high availability. Monitoring and optimisation are supported through **Amazon CloudWatch** and **AWS Trusted Advisor**.
-
----
+Relational data is stored in Amazon RDS using a Multi-AZ deployment, ensuring
+high availability and automatic failover. Monitoring and optimisation are
+supported through Amazon CloudWatch and Trusted Advisor.
 
 ## Key Design Principles
 
-- **High Availability**  
-  Achieved through Multi-AZ RDS deployment, EC2 Auto Scaling, and Route 53 health checks.
+### High Availability
+Achieved through Multi-AZ deployments, load balancing, health checks,
+and automatic failover.
 
-- **Scalability**  
-  Supported by Amazon S3, CloudFront global distribution, and elastic EC2 capacity.
+### Scalability
+Supported by elastic EC2 capacity, Amazon S3 storage, and CloudFront
+global distribution.
 
-- **Performance**  
-  Improved using CloudFront edge caching and load-balanced backend traffic.
+### Performance
+Improved using CloudFront edge caching and balanced backend traffic.
 
-- **Security**  
-  Enforced through AWS WAF, AWS Shield, IAM, private subnets, and security groups.
+### Security
+Enforced through AWS WAF, AWS Shield, IAM policies, private subnets,
+and security groups.
 
-- **Cost Efficiency**  
-  Enabled by Auto Scaling, S3 storage tiers, and Trusted Advisor recommendations.
-
----
+### Cost Efficiency
+Maintained using Auto Scaling, appropriate storage tiers, and ongoing
+optimisation recommendations.
 
 ## Design Decisions and Trade-Offs
 
-- EC2 instances were selected instead of serverless services due to the heavy and continuous compute requirements of 3D content processing.
-- Amazon RDS was chosen over DynamoDB to support structured relational data and transactional consistency.
-- Multi-AZ deployment increases cost but provides enterprise-grade reliability and resilience.
+EC2 instances were selected instead of serverless services due to the
+continuous and compute-intensive nature of 3D asset processing.
 
----
+Amazon RDS was chosen over NoSQL alternatives to support structured,
+relational data and transactional consistency.
 
-## Team Contributions
+Multi-AZ deployments increase infrastructure cost but provide higher
+resilience and production-grade reliability.
 
-This project was completed as group work with the following contributions:
+## Challenges Faced
 
-- Xoliswa – Architecture layout and Availability Zone distribution  
-- Thato – Documentation of service roles and justifications  
-- Aluwani – Architecture structure and security design  
-- Ndzalo – Analysis of trade-offs, alternatives, and challenges  
+Several challenges influenced the final design:
 
----
+- Delivering large 3D assets without introducing latency
+- Balancing strong security controls with performance requirements
+- Scaling compute resources smoothly during traffic spikes
+- Managing cost while maintaining high availability
+
+These challenges required careful service selection and layered
+architecture planning.
+
+## Wins and Lessons Learned
+
+### Wins
+- A resilient architecture capable of handling demanding 3D workloads
+- Clear separation between static content delivery and dynamic processing
+- Security integrated from the edge to the backend
+
+### Lessons Learned
+- Performance must be designed in from the beginning
+- High availability always involves cost trade-offs
+- Cloud architecture is as much about decision-making as it is about services
 
 ## Conclusion
 
-This architecture represents a realistic AWS-based solution for delivering high-quality 3D e-commerce experiences. The design aligns with modern cloud engineering practices and demonstrates practical understanding of scalability, security, performance, and availability within AWS.
+This architecture represents a practical, production-ready approach to
+delivering a high-performance 3D e-commerce experience using cloud services.
 
+It demonstrates how thoughtful architecture design can balance scalability,
+security, performance, and cost while supporting real business requirements.
