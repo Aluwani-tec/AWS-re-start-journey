@@ -81,7 +81,7 @@ Lab domains include:
 - Linux  
 - Security  
 - Python  
-- Management & Monitoring  
+  
 
 ---
 
