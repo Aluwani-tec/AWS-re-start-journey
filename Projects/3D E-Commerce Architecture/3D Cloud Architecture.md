@@ -1,13 +1,11 @@
-# Praesignis 3D E-Commerce Cloud Architecture Project
+# 3D E-Commerce Cloud Architecture
 
-## Project Title
-Praesignis 3D E-Commerce Cloud Architecture
 
 ## Project Type
 Cloud Architecture Design (AWS)
 
-## Programme
-Praesignis Cloud Practitioner Programme
+![3D E-Commerce Architecture](https://raw.githubusercontent.com/Aluwani-tec/AWS-re-start-journey/main/Projects/3D%20E-Commerce%20Architecture/images/3D1.PNG)
+
 
 ## Team Members
 - Thato  
@@ -127,3 +125,4 @@ System monitoring and operational visibility are provided by Amazon CloudWatch, 
 The Praesignis 3D E-Commerce Cloud Architecture Project demonstrates a complete, production-style cloud solution capable of delivering interactive 3D shopping experiences at scale.
 
 The design is resilient, secure, scalable, and aligned with modern AWS best practices and real-world industry standards.
+
