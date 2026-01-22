@@ -1,22 +1,39 @@
 # Certifications – AWS re/Start Programme
 
-This folder contains the certifications, training badges, and proof of learning
+This folder contains the certifications, training badges, and proof of learning  
 completed during my participation in the **AWS re/Start Programme**.
 
-Each certification represents structured learning, hands-on activities,
+Each certification represents structured learning, hands-on activities,  
 and demonstrated progress toward cloud computing and IT fundamentals.
 
 ---
 
 ## Completed Certifications & Badges
 
-### 1. AI Practitioner Certificate
+### 1. AWS re/Start Graduate Badge
+
+![AWS re/Start Graduate Badge](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/aws-re-start-graduate.png?raw=true)
+
+This badge confirms successful completion of the **AWS re/Start Programme**,  
+demonstrating readiness for entry-level cloud and IT roles through technical training,  
+hands-on labs, and professional skills development.
+
+**Programme outcomes demonstrated:**
+- Cloud computing fundamentals
+- AWS core services exposure
+- Hands-on lab and scenario-based learning
+- IT infrastructure and support fundamentals
+- Professional readiness and workplace skills
+
+---
+
+### 2. AI Practitioner Certificate
 
 ![AI Practitioner Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/AI%20PRACTITIONER.SCREENSHOT.PNG?raw=true)
 
-This certification introduced foundational artificial intelligence concepts,
-including the practical use of AI tools, prompt techniques, and structured
-problem-solving approaches to support technical and analytical tasks.
+This certification introduced foundational artificial intelligence concepts,  
+including practical use of AI tools, prompt techniques, and structured  
+problem-solving approaches.
 
 **Key focus areas:**
 - AI fundamentals
@@ -26,11 +43,11 @@ problem-solving approaches to support technical and analytical tasks.
 
 ---
 
-### 2. GenAI for Decision Makers Certificate
+### 3. GenAI for Decision Makers Certificate
 
 ![GenAI Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/GENAI.SCREENSHOT.PNG?raw=true)
 
-This certification focused on applying generative AI in real-world environments,
+This certification focused on applying generative AI in real-world environments,  
 with an emphasis on business value, strategic decision-making, and responsible adoption.
 
 **Key focus areas:**
@@ -41,14 +58,12 @@ with an emphasis on business value, strategic decision-making, and responsible a
 
 ---
 
-### 3. AWS Cloud Quest – Cloud Practitioner Training Badge
+### 4. AWS Cloud Quest – Cloud Practitioner Training Badge
 
 ![Cloud Practitioner Badge](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/aws-cloud-quest-cloud-practitioner-training-badge.png?raw=true)
 
-This badge was earned by completing interactive, hands-on cloud challenges
+This badge was earned by completing interactive, hands-on cloud challenges  
 through AWS Cloud Quest.
-
-The challenges introduced core AWS concepts using practical, scenario-based learning.
 
 **Skills demonstrated:**
 - Compute fundamentals
@@ -59,12 +74,12 @@ The challenges introduced core AWS concepts using practical, scenario-based lear
 
 ---
 
-### 4. SimuLearn – Compute Module Certificate
+### 5. SimuLearn – Compute Module Certificate
 
 ![SimuLearn Compute Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/COMPUTING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
 
-This certificate validates completion of the SimuLearn Compute module, which focused
-on understanding Amazon EC2, instance types, and workload optimization.
+This certificate validates completion of the SimuLearn Compute module,  
+focused on Amazon EC2 and compute workload optimization.
 
 **Key focus areas:**
 - Launching and managing EC2 instances
@@ -73,12 +88,12 @@ on understanding Amazon EC2, instance types, and workload optimization.
 
 ---
 
-### 5. SimuLearn – Networking Module Certificate
+### 6. SimuLearn – Networking Module Certificate
 
 ![SimuLearn Networking Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/NETWORKING%20SIMULEARN.SCREENSHOT.PNG?raw=true)
 
-This module focused on AWS networking fundamentals and how cloud resources communicate
-securely and efficiently within AWS environments.
+This module focused on AWS networking fundamentals and secure communication  
+between cloud resources.
 
 **Key focus areas:**
 - Amazon VPC fundamentals
@@ -88,11 +103,11 @@ securely and efficiently within AWS environments.
 
 ---
 
-### 6. SimuLearn – Auto Healing and Scaling Module
+### 7. SimuLearn – Auto Healing and Scaling Module
 
 ![Auto Healing and Scaling](https://github.com/Aluwani-tec/AWS-re-start-journey/blob/main/Certification/images/Auto%20healing%20and%20scaling.PNG?raw=true)
 
-This module introduced concepts related to application availability and elasticity
+This module introduced application availability and elasticity concepts  
 using AWS compute services.
 
 **Key focus areas:**
@@ -103,12 +118,12 @@ using AWS compute services.
 
 ---
 
-### 7. SimuLearn – Domain Module Certificate
+### 8. SimuLearn – Domain Module Certificate
 
 ![SimuLearn Domain Certificate](https://github.com/Aluwani-tec/AWS-re-start-journey/raw/main/Certification/images/SIMULEARN%20DOMAIN.SCREENSHOT.PNG?raw=true)
 
-This module covered core cloud and IT domain fundamentals that support all other AWS
-learning areas within the AWS re/Start programme.
+This module covered core cloud and IT domain fundamentals supporting  
+all AWS re/Start learning tracks.
 
 **Key focus areas:**
 - Cloud computing concepts
@@ -134,7 +149,6 @@ Currently preparing for the AWS Certified Cloud Practitioner final exam.
 
 ## Summary
 
-All certifications and badges in this folder form part of my
-**AWS re/Start learning portfolio** and demonstrate continuous learning,
-hands-on engagement, and practical exposure to cloud technologies
-throughout the programme.
+All certifications and badges in this folder form part of my  
+**AWS re/Start learning portfolio** and demonstrate continuous learning,  
+hands-on engagement, and practical exposure to cloud technologies.
