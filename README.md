@@ -1,133 +1,70 @@
-# Hi, I'm Olivia Aluwani Mahuluhulu  
-### AWS re/Start Trainee | Cloud & IT Support Enthusiast  
+# AWS re/Start Cloud Practitioner Portfolio
 
-Welcome to my AWS re/Start Journey repository.  
-This repo documents my progress through the AWS re/Start programme – what I learned, the labs I completed, the projects I built, and how my technical skills have grown over time.
+## Olivia Aluwani Mahuluhulu
 
----
+**AWS Certified Cloud Practitioner | AWS re/Start Graduate**
 
-## Why I Joined AWS re/Start  
+This repository presents the practical cloud work I completed during the AWS re/Start programme. It demonstrates foundational experience with AWS services, Linux, networking, databases, troubleshooting, and technical documentation.
 
-I joined AWS re/Start to build a solid, practical foundation in cloud computing and IT support.  
-My goal is to move into a technical role where I can support users, troubleshoot systems, and work confidently with cloud infrastructure.
+## Portfolio navigation
 
-This repository is my **evidence of learning** – the work I would show to a recruiter, mentor, or hiring manager.
+| Section | What it contains |
+|---|---|
+| [Certifications and training](Certification/) | AWS certification, AWS re/Start graduate badge, Cloud Quest, SimuLearn, AI, and generative AI training |
+| [Hands-on labs](Labs/) | Documented exercises across compute, networking, databases, Linux, and application scaling |
+| [Projects](Projects/) | Applied AWS projects covering static hosting, conversational AI, and cloud architecture design |
 
----
+## Core skills
 
-## AWS re/Start Journey Overview  
+- **Compute:** Amazon EC2, AMIs, launch templates, and Auto Scaling
+- **Storage:** Amazon S3 and static website hosting
+- **Networking:** Amazon VPC, subnets, CIDR planning, DNS, and security groups
+- **Databases:** Amazon RDS, MariaDB, DynamoDB concepts, migration, and SQL
+- **Monitoring:** Amazon CloudWatch metrics and operational validation
+- **Systems:** Linux command line, shell scripting, file processing, and automation
+- **Tools:** AWS Management Console, AWS CLI, Git, GitHub, and VS Code
 
-During the programme I completed hands-on labs, games (CloudQuest, SimuLearn), and guided projects that covered:
+## Selected labs
 
-- How cloud computing differs from traditional on-premise IT  
-- How to deploy and manage resources in AWS  
-- How to troubleshoot issues using logs, metrics, and the CLI  
-- How to think like a cloud/IT support professional when solving problems  
+| Lab | Evidence demonstrated |
+|---|---|
+| [EC2 web server](Labs/Compute/EC2%20Web%20Server.md) | Instance deployment, user data, monitoring, and security-group troubleshooting |
+| [EC2 scaling and optimisation](Labs/Compute/EC2%20Instance%20Scaling%20and%20Compute%20Optimization.md) | Instance analysis, resizing, validation, and performance considerations |
+| [Auto healing and scaling](Labs/Application/Auto%20Healing%20and%20Scaling.md) | AMIs, launch templates, Auto Scaling groups, and elasticity |
+| [VPC and subnet setup](Labs/Networking/VPC%20and%20Subnet%20Setup.md) | Custom VPC design, CIDR planning, DNS, and subnet configuration |
+| [RDS migration](Labs/Database/Migrating%20to%20Amazon%20RDS%20(MariaDB).md) | MariaDB migration, private subnets, security groups, and monitoring |
+| [Linux automation](Labs/Linux/Batch%20File%20Automation.md) | Shell scripting, file processing, and backup automation |
 
-### Core Concepts Covered
+## Projects
 
-- **Cloud Architecture & Design**  
-- **AWS Compute & Storage:** EC2, S3  
-- **Identity & Access Management:** IAM users, roles, policies  
-- **Networking:** VPCs, subnets, IP addressing, security groups  
-- **Databases:** RDS, DynamoDB fundamentals  
-- **Monitoring & Logging:** CloudWatch basics  
-- **Linux Administration:** CLI, users, permissions, processes  
-- **Python Fundamentals** for basic scripting and automation  
+### [Static Restaurant Website on Amazon S3](Projects/S3-Static-Website/)
 
----
+A group project demonstrating static website hosting, S3 permissions, bucket policies, troubleshooting, and cost-conscious cloud delivery.
 
-## Skills & Technologies Gained  
+### [Amazon Lex Interactive Chatbot](Projects/Amazon%20Lex%20Chatbot/)
 
-- **AWS Services:** EC2, S3, IAM, VPC, CloudWatch, RDS, DynamoDB  
-- **Linux:** Command line operations, permissions, updates, logs  
-- **Networking:** OSI model, IP addressing, static/dynamic IPs, routing  
-- **Scripting:** Python basics (variables, loops, simple scripts)  
-- **Tools:** Git, GitHub, VS Code, PuTTY, AWS CLI  
+An interactive educational chatbot built with Amazon Lex V2 using intents, utterances, conditional branching, and structured testing.
 
----
+### [3D E-Commerce Cloud Architecture](Projects/3D%20E-Commerce%20Architecture/)
 
-## Certifications & Learning Modules  
+A conceptual AWS re/Start group architecture case study focused on global content delivery, scalability, high availability, security, and cost trade-offs.
 
-In the **Certification** folder, each `.md` file summarises a module or badge I’ve completed (SimuLearn, CloudQuest, GenAI and others).  
-For each one, I document:
+## Credentials
 
-- What the module covered  
-- Key concepts and takeaways  
-- How it connects to real-world cloud or IT support work  
-- Personal reflections  
+- AWS Certified Cloud Practitioner
+- AWS re/Start Graduate
+- AWS Cloud Quest: Cloud Practitioner
+- AWS SimuLearn modules in compute, networking, scaling, and domain fundamentals
+- AI Practitioner and Generative AI for Decision Makers training
 
----
+View the supporting badges and learning records in the [Certification folder](Certification/).
 
-## Labs  
+## About this repository
 
-The **Labs** folder contains detailed notes for the hands-on labs I completed during AWS re/Start.
+The work is organised to show both technical execution and the reasoning behind each task. Lab documentation includes objectives, configurations, evidence, outcomes, challenges, and lessons learned.
 
-Each lab write-up includes:
+## Contact
 
-- **Objective** – what the lab was designed to teach  
-- **Overview** – short description in my own words  
-- **Steps Taken** – what I did and why  
-- **Screenshots** – 2–3 key images showing the setup or results  
-- **Result** – what I achieved at the end  
-- **Challenges & Lessons** – what went wrong and what I learned  
-
-Lab domains include:
-
-- Compute  
-- Storage  
-- Networking  
-- Databases  
-- Linux  
-- Security  
-- Python  
-  
-
----
-
-## Projects  
-
-### 1. Static Website on Amazon S3  
-Hosted a static website using **Amazon S3** with static website hosting, bucket policies, and public access configuration.  
-This project demonstrates my understanding of S3, permissions, and basic web hosting in a serverless way.
-
----
-
-### 2. 3D AWS Architecture Project  
-Worked on a **3-tier AWS architecture** design including VPCs, public and private subnets, routing tables, EC2 instances, IAM, and a managed database service.  
-The focus was on scalability, separation of layers, and basic security best practices.
-
----
-
-### 3. AWS Lex Chatbot Project – Quiz Bot for Students  
-Final Praesignis project: designed and built an interactive **Amazon Lex chatbot**.
-
-**Key elements:**
-- Built a simple intent-based chatbot to answer basic AWS questions  
-- Created a quiz-style bot for a fictional client (CloudLearners Inc.)  
-- Used **intents, utterances and branching logic** to handle correct/incorrect answers  
-- Implemented a short S3 quiz (“What does S3 stand for?”, “What is S3 mainly used for?”)  
-- Tested full flows: start quiz → questions → feedback → next question  
-
-This project combined cloud services with AI-driven interaction and included a formal presentation and live demo in the AWS console.
-
----
-
-## Impact of the Journey  
-
-AWS re/Start has:
-
-- Given me confidence to work hands-on in the AWS Console  
-- Strengthened my troubleshooting and problem-solving mindset  
-- Built a strong foundation in networking, Linux and cloud services  
-- Prepared me for an entry-level cloud or IT support role  
-
-This repository is a record of that growth.
-
----
-
-## Contact  
-
-If you’d like to discuss my work or opportunities:
-
-- **Email:** mikoalu@gmail.com
+- Website: [aluwani.cloud](https://www.aluwani.cloud)
+- Email: [mikoalu@gmail.com](mailto:mikoalu@gmail.com)
+- GitHub: [Aluwani-tec](https://github.com/Aluwani-tec)
